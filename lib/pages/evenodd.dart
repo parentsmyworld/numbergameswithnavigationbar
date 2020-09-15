@@ -39,7 +39,7 @@ class _EvenorOddState extends State<EvenorOdd> {
                         hintText: "Enter a Number"
                     )
                 ),
-                SizedBox(height: 20.0,),
+                SizedBox(height: 30.0,),
                 GestureDetector(
                   onTap: (){
                     setState(() {

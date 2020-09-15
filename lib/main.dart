@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_calculatornavigatbar/pages/Smallest.dart';
-
+import 'package:flutter_calculatornavigatbar/pages/divisibilityby8.dart';
 import 'package:flutter_calculatornavigatbar/pages/evenodd.dart';
 import 'package:flutter_calculatornavigatbar/pages/largest.dart';
 void main(){
@@ -12,7 +12,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  final pages=[EvenorOdd(),Largest(),Smallest()];
+  final pages=[EvenorOdd(),Largest(),Smallest(),Div()];
   int _myindex=0;
 
   @override
@@ -59,14 +59,17 @@ class _HomeState extends State<Home> {
               items: [
                 BottomNavigationBarItem(
 
-                    icon: Icon(Icons.arrow_back_ios),
+                    icon: Icon(Icons.home),
                 title: Text("Even or Odd")),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.home),
+                    icon: Icon(Icons.arrow_forward_ios),
                     title: Text("Largest")),
                 BottomNavigationBarItem(
                     icon: Icon(Icons.arrow_forward_ios),
                     title: Text("Smallest")),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.arrow_forward_ios),
+                    title: Text("Divisibility8"))
               ]),
         ),
       ),
