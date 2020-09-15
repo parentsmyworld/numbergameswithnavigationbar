@@ -29,7 +29,7 @@ class _HomeState extends State<Home> {
                     colors: [Color(0xff833ab4),Color(0xfffd1d1d),Color(0xfffcb045)])
             ),
           ),
-          title: Center(child: Text("CALCULATOR",style: TextStyle(color: Colors.black),)),
+          title: Center(child: Text("NUMBER GAMES",style: TextStyle(color: Colors.black),)),
         ),
         body: pages[_myindex],
         bottomNavigationBar: Container(
